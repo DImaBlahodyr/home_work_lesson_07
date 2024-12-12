@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Sans:regular,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Epilogue:regular,700&display=swap');
+@import url('reset.css');
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 34px;
+  margin-block: 25px;
+  text-align: center;
+  margin-inline: 15px;
+  padding-block: 15px;
+}
+h1:hover {
+  color: green;
+  background-color: bisque;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+footer {
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 4px;
+  background: linear-gradient(
+    90deg,
+    rgba(186, 171, 40, 1) 18%,
+    rgba(26, 153, 93, 1) 58%,
+    rgba(0, 212, 255, 1) 95%
+  );
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/* Повторення матеріалу уроку */
+.section-1 {
+  background-color: aquamarine;
+  padding: 15px;
+  margin-inline: 15px;
+  margin-bottom: 20px;
+}
+.text-section-1 p {
+  margin-bottom: 20px;
+}
+
+.some-text-1 {
+  text-decoration: underline;
+}
+.some-text-1:active {
+  color: white;
+}
+.link:visited {
+  color: gray;
+}
+.some-text-2:focus {
+  outline: 2px solid black;
+}
+.show-block:hover {
+  text-decoration: underline;
+}
+.some-block {
+  display: none;
+}
+.some-block:target {
+  display: block;
+}
+.text-section-1 p:first-child {
+  text-transform: uppercase;
+}
+.text-section-1 p:last-of-type {
+  color: azure;
+}
+.text-section-1 p:nth-child(6) {
+  color: white;
+}
+.text-section-1 p:nth-child(odd) {
+  background-color: darkkhaki;
+}
+.text-section-1 p:nth-child(3n + 2) {
+  text-align: right;
+}
+
+/* Перший макет */
+.timeline {
+  max-width: 889px;
+  margin: 0 auto;
+}
+.timeline-row-1 {
+  margin-block: 21px;
+}
+.timeline-row-2 {
+  margin-block: 21px;
+}
+.timeline-row-3 {
+  margin-block: 21px;
+}
+.timeline-row-container {
+  margin-block-end: 54px;
+}
+.pre-title {
+  color: #4a3aff;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: 'DM Sans';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  margin-bottom: 8px;
+}
+.timeline-title {
+  color: #1e1b39;
+  font-family: 'DM Sans';
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 54px;
+  margin-bottom: 8px;
+}
+.timeline-text {
+  color: #6e6c83;
+  font-family: 'DM Sans';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 42px;
+}
+.timeline-row-container:last-child {
+  margin-block-end: 0;
+}
+.timeline-row-1 h3::after {
+  content: '';
+  background: url('../img/02_searchbar.png') right / 42px no-repeat;
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.timeline-row-2 h3::after {
+  content: '';
+  background: url('../img/03_laptop.png') right / 42px no-repeat;
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.timeline-row-3 h3::after {
+  display: inline-block;
+  content: '';
+  background: url('../img/04_rocket.png') right / 42px no-repeat;
+  width: 42px;
+  height: 42px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+/* Другий макет */
+.section-3 {
+  margin-block-end: 50px;
+}
+.pricing-plans-container {
+  width: 542.983px;
+  height: 617px;
+  border-radius: 56px;
+  background: #f0f0f6;
+}
+.price {
+  width: 494.98px;
+  height: 271.17px;
+  border-radius: 34px;
+  background: #4a3aff;
+  display: inline-block;
+  margin-inline: 24px;
+  margin-block: 24px;
+}
+.price-box {
+  display: inline-block;
+  margin-block: 44.79px;
+  margin-inline: 138.99px;
+}
+.pricing-subtitle {
+  color: #fff;
+  text-align: center;
+  font-family: 'DM Sans';
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+.pricing-title {
+  color: #fff;
+  text-align: center;
+  font-family: 'DM Sans';
+  font-size: 116px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120px;
+}
+.pricing-text {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-family: 'DM Sans';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+}
+.basic-list-container {
+  display: inline-block;
+  margin-inline-start: 36.99px;
+  margin-block-start: 9.83px;
+}
+.basic-list li {
+  color: #1e1b39;
+  font-family: 'DM Sans';
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+}
+.basic-list li:not(:last-child) {
+  margin-bottom: 26px;
+}
+.li::before {
+  display: inline-block;
+  content: '';
+  width: 36px;
+  height: 36px;
+  margin-right: 14px;
+  vertical-align: middle;
+  background: url('../img/05_check_circle.svg') left / 36px no-repeat;
+}
+
+/* Третій макет */
+.section-4 {
+  max-width: 100%;
+  background: #fdf0e9;
+}
+
+.portfolio-template-container {
+  max-width: 970px;
+  margin: 0 auto;
+  padding-block: 20px;
+}
+.portfolio-img {
+  max-width: 970px;
+  max-height: 592px;
+  text-align: center;
+  margin-bottom: 74px;
+}
+.portfolio-template-text {
+  max-width: 570px;
+  margin: 0 auto;
+}
+.portfolio-text {
+  color: #391400;
+  font-family: Epilogue;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 32px;
+}
+.portfolio-template-text p {
+  color: rgba(57, 20, 0, 0.64);
+  font-family: Epilogue;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+.portfolio-template-text p:first-of-type {
+  margin-bottom: 51px;
+}
+.portfolio-template-text h4 {
+  color: #391400;
+  font-family: Epilogue;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 35px;
+}
+.portfolio-template-text p:nth-of-type(2) {
+  margin-bottom: 34px;
+}
+.portfolio-template-text p:nth-of-type(3) {
+  margin-bottom: 65px;
+}
+.portfolio-template-text p:nth-of-type(4) {
+  margin-bottom: 28px;
+}
+.portfolio-template-text p:nth-of-type(5) {
+  margin-bottom: 69px;
+}
+.marked-list {
+  color: #391400;
+  font-family: Epilogue;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 32px;
+}
+.marked-list li::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: url('../img/07_oval.svg') left / 8px no-repeat;
+  margin-right: 16px;
+}
+.numbered-list {
+  color: #391400;
+  font-family: Epilogue;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 32px;
+}
+.text-big-container {
+  max-width: 570px;
+  max-height: 176px;
+  border-radius: 6px;
+  background: #f9e5da;
+  margin-bottom: 76px;
+}
+.text-big-container p {
+  display: inline-block;
+  color: #391400;
+  font-family: Epilogue;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  padding: 42px 32px 32px 112px;
+  background: url('../img/08_shape.svg') 32px 40px / 48px no-repeat;
+}
